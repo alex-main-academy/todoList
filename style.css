@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  width: 450px;
+  margin: auto auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-right: 1px dotted #bbbbbb;
+}
+.card__data {
+  background-color: rgba(59, 147, 219, 0.39);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-left-radius: 30px;
+}
+.data__data {
+  padding: 25px 0 0 0;
+}
+.data__task {
+  padding: 0 0 25px 0;
+  margin: 10px 0 0 0;
+}
+.new__todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+  padding: 0 20px;
+}
+.todo__task {
+  font-size: 20px;
+  width: 300px;
+  color: #464646;
+}
+.todo__completed-icon {
+  width: 30px;
+  opacity: 0;
+  margin: 0 0 0 4px;
+  transition-duration: 1s;
+}
+.todo__completed {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 35px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.card__button {
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  width: 410px;
+  top: 87%;
+}
+.card__button:hover {
+  cursor: pointer;
+}
+.button__icon {
+  width: 40px;
+  background-color: rgba(59, 147, 219, 0.39);
+  padding: 15px;
+  border-radius: 50%;
+  transition-duration: 1s;
+}
+.button__input {
+  width: 100%;
+  height: 50px;
+  margin: 0 20px 0 0;
+  font-size: 20px;
+  color: #464646;
+  padding: 0 5px;
+  border: 1px solid gray;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  transition-duration: 1s;
+  transform: translate(-120%);
+  opacity: 0;
+}
+.button__input:focus {
+  outline: none;
+}
+@media (max-width: 450px) {
+  .card {
+    width: 100vw;
+  }
+  .card__button {
+    width: 375px;
+  }
+}
+@media (max-width: 415px) {
+  .card__button {
+    width: 330px;
+  }
+  .button__icon {
+    width: 32px;
+  }
+  .button__input {
+    height: 40px;
+  }
+}
